@@ -70,8 +70,6 @@ def description(movie):
     set = []
     if movie['title']:
         set.append(movie['title'])
-    if movie['type']:
-        set.append(movie['type'].capitalize())
     if movie['release_year']:
         set.append(str(movie['release_year']))
     description = " | ".join(set)
